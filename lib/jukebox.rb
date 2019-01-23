@@ -36,6 +36,10 @@ def play(songs)
   if valid_song?(songs,input)
     song = song_from_input(songs,input)
     puts "Playing #{song}"
+  else
+    puts "Invalid input, lease try again"
+    play(songs)
+  end
 end
 
 def list(songs)
