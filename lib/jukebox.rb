@@ -47,6 +47,6 @@ def exit_jukebox()
 end
 binding.pry
 def run()
-  
+ puts ""  
 end
 
