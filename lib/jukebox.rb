@@ -22,8 +22,8 @@ def valid_song?(songs, input)
   input.to_i < songs.length || songs.include?(input)
 end
 def song_from_input(songs,input)
-  if input.length > 3
-    
+  if input.length > 3 && songs.include?(input)
+    return input
   else
     index = input.to_i - 1
     return songs[index]
